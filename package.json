@@ -1,0 +1,40 @@
+{
+  "name": "games",
+  "version": "0.0.1",
+  "description": "A collection of simple games. ",
+  "license": "MIT",
+  "repository": "github:/sp1tz/games.git",
+  "bugs": "https://github.com/sp1tz/games/issues",
+  "author": "sp1tz (https://sp1tz.github.io)",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {
+    "jshint": "^2.12.0"
+  },
+  "jshintConfig": {
+    "bitwise": true,
+    "browser": true,
+    "curly": true,
+    "eqeqeq": true,
+    "esversion": 10,
+    "expr": true,
+    "forin": true,
+    "freeze": true,
+    "futurehostile": true,
+    "node": true,
+    "latedef": "nofunc",
+    "leanswitch": true,
+    "noarg": true,
+    "nocomma": true,
+    "nonbsp": true,
+    "nonew": true,
+    "noreturnawait": true,
+    "singleGroups": true,
+    "strict": "global",
+    "undef": true,
+    "unused": true,
+    "validthis": true,
+    "varstmt": true
+  }
+}
