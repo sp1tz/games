@@ -1,0 +1,78 @@
+body {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#gameOptions {
+  padding: 10px;
+}
+
+#submit {
+  border: solid;
+  padding: 2px;
+  margin: 10px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+#ticTacToeBoard {
+  font-size: 1pc;
+  width: 33em;
+  padding-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.square {
+  font-size: 8em;
+  text-align: center;
+  float: left;
+  width: 10pc;
+  height: 10pc;
+  border: solid;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+#spot0 {
+  border-left: none;
+  border-top: none;
+}
+
+#spot1 {
+  border-top: none;
+}
+
+#spot2 {
+  border-top: none;
+  border-right: none;
+}
+
+#spot3 {
+  border-left: none;
+}
+
+#spot5 {
+  border-right: none;
+}
+
+#spot6 {
+  border-left: none;
+  border-bottom: none;
+}
+
+#spot7 {
+  border-bottom: none;
+}
+
+#spot8 {
+  border-right: none;
+  border-bottom: none;
+}
