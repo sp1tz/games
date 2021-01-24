@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Welcome to Tic-Tac-Toe!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script defer src="main.js"></script>
+  </head>
+  <body id="gameOptions">
+    <h3>Game Options:</h3>
+    <form action="game.html" method="GET">
+      <input type="radio" name="mode" class="mode" id="1player" value="1" checked="checked"/>
+      <label for="1player">Single-player</label>
+      <input type="radio" name="mode" class="mode" id="2player" value="2"/>
+      <label for="2player">Multiplayer</label>
+      <br>
+      <div id="difficultySection">
+        <input type="radio" name="difficulty" class="difficulty" id="easy" value="1"/>
+        <label for="easy">Easy</label>
+        <input type="radio" name="difficulty" class="difficulty" id="medium" value="2" checked="checked"/>
+        <label for="medium">Medium</label>
+        <input type="radio" name="difficulty" class="difficulty" id="hard" value="3"/>
+        <label for="hard">Hard</label>
+        <br>
+        <input type="checkbox" name="goFirst" class="goFirst" value="1" checked="checked"/>First Move
+      </div>
+      <input id="submit" type="submit" value="Start"/>
+    </form>
+  </body>
+</html>
