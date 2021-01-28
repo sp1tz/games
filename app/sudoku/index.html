@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Sudoku</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="board.js"></script>
+    <script defer src="ai.js"></script>
+    <script defer src="ui.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div id="boardContainer">
+      <span class="space top-left" id="00">5</span>
+      <span class="space top-left" id="01">3</span>
+      <span class="space top-left" id="02">-</span>
+      <span class="space top-mid" id="03">-</span>
+      <span class="space top-mid" id="04">7</span>
+      <span class="space top-mid" id="05">-</span>
+      <span class="space top-right" id="06">-</span>
+      <span class="space top-right" id="07">-</span>
+      <span class="space top-right" id="08">-</span><br>
+      <span class="space top-left" id="10">6</span>
+      <span class="space top-left" id="11">-</span>
+      <span class="space top-left" id="12">-</span>
+      <span class="space top-mid" id="13">1</span>
+      <span class="space top-mid" id="14">9</span>
+      <span class="space top-mid" id="15">5</span>
+      <span class="space top-right" id="16">-</span>
+      <span class="space top-right" id="17">-</span>
+      <span class="space top-right" id="18">-</span><br>
+      <span class="space top-left" id="20">-</span>
+      <span class="space top-left" id="21">9</span>
+      <span class="space top-left" id="22">8</span>
+      <span class="space top-mid" id="23">-</span>
+      <span class="space top-mid" id="24">-</span>
+      <span class="space top-mid" id="25">-</span>
+      <span class="space top-right" id="26">-</span>
+      <span class="space top-right" id="27">6</span>
+      <span class="space top-right" id="28">-</span><br>
+      <span class="space left" id="30">8</span>
+      <span class="space left" id="31">-</span>
+      <span class="space left" id="32">-</span>
+      <span class="space mid" id="33">-</span>
+      <span class="space mid" id="34">6</span>
+      <span class="space mid" id="35">-</span>
+      <span class="space right" id="36">-</span>
+      <span class="space right" id="37">-</span>
+      <span class="space right" id="38">3</span><br>
+      <span class="space left" id="40">4</span>
+      <span class="space left" id="41">-</span>
+      <span class="space left" id="42">-</span>
+      <span class="space mid" id="43">8</span>
+      <span class="space mid" id="44">-</span>
+      <span class="space mid" id="45">3</span>
+      <span class="space right" id="46">-</span>
+      <span class="space right" id="47">-</span>
+      <span class="space right" id="48">1</span><br>
+      <span class="space left" id="50">7</span>
+      <span class="space left" id="51">-</span>
+      <span class="space left" id="52">-</span>
+      <span class="space mid" id="53">-</span>
+      <span class="space mid" id="54">2</span>
+      <span class="space mid" id="55">-</span>
+      <span class="space right" id="56">-</span>
+      <span class="space right" id="57">-</span>
+      <span class="space right" id="58">6</span><br>
+      <span class="space bot-left" id="60">-</span>
+      <span class="space bot-left" id="61">6</span>
+      <span class="space bot-left" id="62">-</span>
+      <span class="space bot-mid" id="63">-</span>
+      <span class="space bot-mid" id="64">-</span>
+      <span class="space bot-mid" id="65">-</span>
+      <span class="space bot-right" id="66">2</span>
+      <span class="space bot-right" id="67">8</span>
+      <span class="space bot-right" id="68">-</span><br>
+      <span class="space bot-left" id="70">-</span>
+      <span class="space bot-left" id="71">-</span>
+      <span class="space bot-left" id="72">-</span>
+      <span class="space bot-mid" id="73">4</span>
+      <span class="space bot-mid" id="74">1</span>
+      <span class="space bot-mid" id="75">9</span>
+      <span class="space bot-right" id="76">-</span>
+      <span class="space bot-right" id="77">-</span>
+      <span class="space bot-right" id="78">5</span><br>
+      <span class="space bot-left" id="80">-</span>
+      <span class="space bot-left" id="81">-</span>
+      <span class="space bot-left" id="82">-</span>
+      <span class="space bot-mid" id="83">-</span>
+      <span class="space bot-mid" id="84">8</span>
+      <span class="space bot-mid" id="85">-</span>
+      <span class="space bot-right" id="86">-</span>
+      <span class="space bot-right" id="87">7</span>
+      <span class="space bot-right" id="88">9</span>
+    </div>
+    <div id="statusContainer">
+      <p id="status">
+        The puzzle is <span id="valid">valid</span><span id="invalid" class="hide">invalid</span>.<br>
+        The puzzle is <span id="complete" class="hide">complete</span><span id="incomplete">incomplete</span>.
+      </p>
+      <button type="button">Solve Puzzle</button>
+    </div>
+  </body>
+</html>
