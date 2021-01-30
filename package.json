@@ -12,6 +12,10 @@
   "devDependencies": {
     "jshint": "^2.12.0"
   },
+  "scripts": {
+    "start": "http-server app/",
+    "test": "jshint app/"
+  },
   "jshintConfig": {
     "bitwise": true,
     "browser": true,
