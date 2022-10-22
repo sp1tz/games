@@ -28,7 +28,7 @@ window.UI = {
 
     do {
       valueToFill = window.prompt(
-        `Enter value for row ${Number.parseInt(this.id[0], 10) + 1}, column ${Number.parseInt(this.id[1], 10) + 1}:`
+        `Enter value for row ${Number(this.id[0]) + 1}, column ${Number(this.id[1]) + 1}:`
       );
     } while (window.UI.checkSpot(valueToFill));
 

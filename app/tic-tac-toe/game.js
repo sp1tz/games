@@ -74,7 +74,7 @@
 
   function placeMove() {
     const move = this.id.charAt(4),
-          index = window.availableMoves.indexOf(Number.parseInt(move, 10));
+          index = window.availableMoves.indexOf(Number(move));
 
     if (window.turn++ % 2) {
       document.getElementById(this.id).innerHTML = 'O';
