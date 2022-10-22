@@ -1,4 +1,5 @@
 'use strict';
+
 window.nextMoveAI = (function() {
   const notFound = -1;
 

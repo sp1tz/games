@@ -1,4 +1,5 @@
 'use strict';
+
 window.board = (function() {
   const board = new Array(9);
 

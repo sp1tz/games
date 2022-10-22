@@ -1,4 +1,5 @@
 'use strict';
+
 (function() {
   const dice = new Array(2),
         intervals = [],

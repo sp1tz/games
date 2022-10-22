@@ -1,4 +1,5 @@
 'use strict';
+
 function Spot(element) {
   if (element.innerText === '-') {
     element.addEventListener('click', window.UI.fillSquare);

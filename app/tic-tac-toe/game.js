@@ -1,4 +1,5 @@
 'use strict';
+
 (function() {
   const color = 'red',
         formData = (function getURIParameters(dict) {

@@ -1,4 +1,5 @@
 'use strict';
+
 window.UI = {
   checkSpot: valueToFill => {
     return valueToFill !== null &&

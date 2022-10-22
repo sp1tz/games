@@ -1,4 +1,5 @@
 'use strict';
+
 window.solveAI = (function() {
   const workingSet = [];
 
