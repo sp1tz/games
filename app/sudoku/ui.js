@@ -12,7 +12,7 @@ window.UI = {
   },
   disable: function() {
     this.solveBtn.removeEventListener('click', this.solveBtnCb);
-    document.addEventListener('click', (e) => e.stopPropagation(), true);
+    document.addEventListener('click', (e) => { e.stopPropagation(); }, true);
   },
   setStatus: function(trueSpotsWithNoFalse) { // 27 checks @ 9 a clip
     this.statusElements[0].className = trueSpotsWithNoFalse ? '' : 'hide';
