@@ -168,7 +168,7 @@ window.nextMoveAI = (function() {
     return toReturn < 0 ? canLoseInOne() : toReturn;
   }
 
-  return difficulty => {
+  return (difficulty) => {
     const chance = Math.floor(Math.random() * 100);
 
     let index;

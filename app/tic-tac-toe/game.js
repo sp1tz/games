@@ -3,7 +3,7 @@
 (function() {
   const color = 'red',
         formData = (function getURIParameters(dict) {
-          decodeURIComponent(window.location.search).substring(1).split('&').forEach(param => {
+          decodeURIComponent(window.location.search).substring(1).split('&').forEach((param) => {
             const data = param.split('=');
             Object.defineProperty(dict, data[0], { value: data[1] });
           });
@@ -124,7 +124,7 @@
     }
   }
 
-  window.sumTrios = gameBoard => {
+  window.sumTrios = (gameBoard) => {
     const trioSum = new Array(8);
 
     // Column sums:

@@ -79,10 +79,10 @@ window.board = (function() {
   }
 
   return {
-    getSpot: location => {
+    getSpot: (location) => {
       return board[location[0]][location[1]];
     },
-    setSpot: spot => {
+    setSpot: (spot) => {
       board[spot.location[0]][spot.location[1]] = spot;
     },
     toString: () => {
