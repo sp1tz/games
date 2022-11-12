@@ -114,7 +114,7 @@
 
     window.availableMoves.splice(window.availableMoves.indexOf(index), 1);
 
-    if (gameStatus() === 0) {
+    if (!gameStatus()) {
       document.getElementById(`spot${index}`).removeEventListener('click', placeMove);
     } else {
       for (let i = 0; i < window.availableMoves.length; i++) {
