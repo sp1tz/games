@@ -7,10 +7,10 @@
   "bugs": "https://github.com/sp1tz/games/issues",
   "author": "sp1tz (https://sp1tz.github.io)",
   "dependencies": {
-    "http-server": "^14.1.0"
+    "http-server": "^14.1.1"
   },
   "devDependencies": {
-    "jshint": "^2.13.4"
+    "jshint": "^2.13.6"
   },
   "scripts": {
     "start": "http-server app/",
