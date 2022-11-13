@@ -48,7 +48,7 @@ window.nextMoveAI = (function() {
   }
 
   function oppositeCorner() {
-    const opponent = window.turn % 2 === 0 ? -1 : 1;
+    const opponent = window.turn % 2 ? 1 : -1;
 
     let toReturn = -1;
 
@@ -98,7 +98,7 @@ window.nextMoveAI = (function() {
   }
 
   function setFork() {
-    const self = window.turn % 2 === 0 ? 1 : -1,
+    const self = window.turn % 2 ? -1 : 1,
           tempBoard = new Array(9);
 
     let sumTriosReturned,
@@ -123,7 +123,7 @@ window.nextMoveAI = (function() {
   }
 
   function canLoseInOne() {
-    const opponent = window.turn % 2 === 0 ? -1 : 1,
+    const opponent = window.turn % 2 ? 1 : -1,
           tempBoard = new Array(9);
 
     let sumTriosReturned,
@@ -146,7 +146,7 @@ window.nextMoveAI = (function() {
   }
 
   function canWinInOne() {
-    const self = window.turn % 2 === 0 ? 1 : -1,
+    const self = window.turn % 2 ? -1 : 1,
           tempBoard = new Array(9);
 
     let sumTriosReturned,
