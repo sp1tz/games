@@ -73,21 +73,25 @@ window.nextMoveAI = (function() {
   }
 
   function blockFork() {
-    const tempBoard = new Array(9);
+    const opponent = window.turn % 2 ? 1 : -1,
+          tempBoard = new Array(9);
 
     let sumTriosReturned,
         toReturn = -1;
 
     setReset(tempBoard);
     for (let i = 0; i < window.availableMoves.length; i++) {
-      tempBoard[window.availableMoves[i]] = 1;
+      tempBoard[window.availableMoves[i]] = opponent;
       sumTriosReturned = window.sumTrios(tempBoard);
 
       for (let j = 0; j < 8; j++) {
         for (let k = 0; k < 8; k++) {
-          if (sumTriosReturned[j] === 2 && sumTriosReturned[k] === 2 && j !== k) {
-            toReturn = window.theGameBoard[0] === 1 && window.theGameBoard[8] === 1 ||
-              window.theGameBoard[2] === 1 && window.theGameBoard[6] === 1 ? emptySide() : i;
+          if (sumTriosReturned[j] === opponent * 2 && sumTriosReturned[k] === opponent * 2 &&
+            j !== k) {
+            toReturn =
+              window.theGameBoard[0] === opponent && window.theGameBoard[8] === opponent ||
+              window.theGameBoard[2] === opponent && window.theGameBoard[6] === opponent ?
+              emptySide() : window.availableMoves[i];
           }
         }
       }
