@@ -101,6 +101,6 @@ window.board = (function() {
     check: () => {
       count = 0;
       return checkRows() && checkColumns() && checkBoxes() ? count : 0;
-    }
+    },
   };
 }());

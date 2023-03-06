@@ -43,5 +43,5 @@ window.UI = {
       window.UI.disable();
       window.solveAI(window.UI.setStatus.bind(window.UI));
     }
-  }
+  },
 };

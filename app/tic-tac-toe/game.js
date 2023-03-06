@@ -5,7 +5,9 @@
         formData = (function getURIParameters(dict) {
           decodeURIComponent(window.location.search).substring(1).split('&').forEach((param) => {
             const data = param.split('=');
-            Object.defineProperty(dict, data[0], { value: data[1] });
+            Object.defineProperty(dict, data[0], {
+              value: data[1],
+            });
           });
 
           return dict;
