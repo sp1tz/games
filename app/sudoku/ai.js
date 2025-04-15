@@ -22,6 +22,7 @@ window.solveAI = (function() {
     }
 
     const spot = workingSet.pop();
+
     let res = false;
 
     for (let i = 1; !res && i < 10; i++) {
