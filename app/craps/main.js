@@ -92,12 +92,9 @@
     dice[0] = document.getElementById('die1');
     dice[1] = document.getElementById('die2');
 
-    pics[0] = 'url(\'pics/1.png\')';
-    pics[1] = 'url(\'pics/2.png\')';
-    pics[2] = 'url(\'pics/3.png\')';
-    pics[3] = 'url(\'pics/4.png\')';
-    pics[4] = 'url(\'pics/5.png\')';
-    pics[5] = 'url(\'pics/6.png\')';
+    for (let i = 0; i < pics.length; i++) {
+      pics[i] = `url('pics/${i + 1}.png')`;
+    }
 
     init();
   });
