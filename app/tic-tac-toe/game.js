@@ -1,8 +1,8 @@
 'use strict';
 
-(function() {
+(() => {
   const color = 'red',
-        formData = (function getURIParameters(dict) {
+        formData = ((dict) => {
           decodeURIComponent(window.location.search).substring(1).split('&').forEach((param) => {
             const data = param.split('=');
             Object.defineProperty(dict, data[0], {
@@ -11,7 +11,7 @@
           });
 
           return dict;
-        }({}));
+        })({});
 
   function dispWin(winningCombo) {
     if (winningCombo < 3) {
@@ -164,4 +164,4 @@
   });
 
   window.alert('Welcome, click a spot to place a move.');
-}());
+})();

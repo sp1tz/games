@@ -1,6 +1,6 @@
 'use strict';
 
-window.solveAI = (function() {
+window.solveAI = (() => {
   const workingSet = [];
 
   function discover() {
@@ -46,4 +46,4 @@ window.solveAI = (function() {
     complete();
     setStatus(this.board.check());
   };
-}());
+})();

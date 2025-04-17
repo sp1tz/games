@@ -1,6 +1,6 @@
 'use strict';
 
-window.board = (function() {
+window.board = (() => {
   const board = new Array(9);
 
   let count;
@@ -103,4 +103,4 @@ window.board = (function() {
       return checkRows() && checkColumns() && checkBoxes() ? count : 0;
     },
   };
-}());
+})();

@@ -1,6 +1,6 @@
 'use strict';
 
-(function() {
+(() => {
   let diffHandler,
       multiPlay,
       soloPlay;
@@ -19,4 +19,4 @@
     multiPlay.addEventListener('click', changeVisibilty);
     soloPlay.addEventListener('click', changeVisibilty);
   });
-}());
+})();

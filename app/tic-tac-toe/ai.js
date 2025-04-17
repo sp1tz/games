@@ -1,6 +1,6 @@
 'use strict';
 
-window.nextMoveAI = (function() {
+window.nextMoveAI = (() => {
   const notFound = -1;
 
   function setReset(board) {
@@ -189,4 +189,4 @@ window.nextMoveAI = (function() {
 
     return index;
   };
-}());
+})();

@@ -1,6 +1,6 @@
 'use strict';
 
-(function() {
+(() => {
   const dice = new Array(2),
         intervals = [],
         pics = new Array(6),
@@ -98,4 +98,4 @@
 
     init();
   });
-}());
+})();
