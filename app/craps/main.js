@@ -78,9 +78,11 @@
     if (gameOver) {
       document.removeEventListener('keyup', roll);
 
-      if (window.confirm('Play again?')) {
-        init();
-      }
+      window.setTimeout(() => {
+        if (window.confirm('Play again?')) {
+          init();
+        }
+      }, 1000);
     } else if (!intervals.length) {
       document.addEventListener('keyup', roll);
     }

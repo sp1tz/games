@@ -44,9 +44,7 @@
       }
     }
 
-    if (window.confirm('Replay?')) {
-      window.location.href = 'index.html';
-    }
+    promptReplay();
   }
 
   function gameStatus() {
@@ -64,12 +62,10 @@
       }
     }
 
-    if (Math.abs(gameState) !== 1 && window.availableMoves.length) {
+    if (gameState === 2 && window.availableMoves.length) {
       gameState = 0;
-    }
-
-    if (gameState === 2 && window.confirm('Replay?')) {
-      window.location.href = 'index.html';
+    } else if (gameState === 2) {
+      promptReplay();
     }
 
     return gameState;
@@ -124,6 +120,14 @@
           .removeEventListener('click', placeMove);
       }
     }
+  }
+
+  function promptReplay() {
+    window.setTimeout(() => {
+      if (window.confirm('Replay?')) {
+        window.location.href = 'index.html';
+      }
+    }, 1000);
   }
 
   window.sumTrios = (gameBoard) => {
